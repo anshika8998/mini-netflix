@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mini Netflix</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">🎬 MiniFlix</div>
+    <div class="nav-links">Home</div>
+  </nav>
+
+  <div class="hero">
+    <h1>Unlimited movies, anytime.</h1>
+    <p>Your personal streaming platform.</p>
+  </div>
+
+  <main>
+    <h2 class="section-title">Popular Movies</h2>
+    <div class="movie-grid" id="movie-grid">
+      <!-- Movies loaded here by app.js -->
+    </div>
+  </main>
+
+  <!-- Video player modal -->
+  <div class="modal hidden" id="modal">
+    <div class="modal-content">
+      <button class="close-btn" id="close-btn">✕</button>
+      <video controls autoplay id="video-player">
+        <source id="video-src" src="" type="video/mp4" />
+      </video>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
